@@ -42,7 +42,7 @@ function Title(props) {
       <style jsx>{`
         ${Tag} {
           color: ${appConfig.theme.colors.neutrals["800"]};
-          font-size: 23px;
+          font-size: 24px;
           font-weight: 600;
         }
       `}</style>
