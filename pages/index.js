@@ -40,7 +40,7 @@ function Titulo(props) {
       <Tag>{props.children}</Tag>
       <style jsx>{`
             ${Tag} {
-                color: ${appConfig.theme.colors.neutrals['000']};
+                color: ${appConfig.theme.colors.neutrals['']};
                 font-size: 24px;
                 font-weight: 600;
             }
@@ -71,8 +71,8 @@ export default function PaginaInicial() {
       <Box
         styleSheet={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          backgroundColor: appConfig.theme.colors.primary[500],
-          backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+          backgroundColor: appConfig.theme.colors.primary[50],
+          backgroundImage: 'url(https://d2ofqe7l47306o.cloudfront.net/games/1920x1080/life-is-strange-11.jpg)',
           backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
         }}
       >
@@ -88,7 +88,7 @@ export default function PaginaInicial() {
             width: '100%', maxWidth: '700px',
             borderRadius: '5px', padding: '32px', margin: '16px',
             boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-            backgroundColor: appConfig.theme.colors.neutrals[700],
+            backgroundColor: appConfig.theme.colors.neutrals[500],
           }}
         >
           {/* Formulário */}
@@ -123,7 +123,7 @@ export default function PaginaInicial() {
                 contrastColor: appConfig.theme.colors.neutrals["000"],
                 mainColor: appConfig.theme.colors.primary[500],
                 mainColorLight: appConfig.theme.colors.primary[400],
-                mainColorStrong: appConfig.theme.colors.primary[600],
+                mainColorStrong: appConfig.theme.colors.primary[400],
               }}
             />
           </Box>
@@ -138,9 +138,9 @@ export default function PaginaInicial() {
               alignItems: 'center',
               maxWidth: '200px',
               padding: '16px',
-              backgroundColor: appConfig.theme.colors.neutrals[800],
+              backgroundColor: appConfig.theme.colors.neutrals[600],
               border: '1px solid',
-              borderColor: appConfig.theme.colors.neutrals[999],
+              borderColor: appConfig.theme.colors.neutrals[300],
               borderRadius: '10px',
               flex: 1,
               minHeight: '240px',
