@@ -85,7 +85,7 @@ export default function PaginaInicial() {
               xs: 'column',
               sm: 'row',
             },
-            width: '100%', maxWidth: '700px',
+            width: '50%', maxWidth: '600px',
             borderRadius: '5px', padding: '32px', margin: '16px',
             boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
             backgroundColor: appConfig.theme.colors.neutrals[500],
@@ -100,7 +100,7 @@ export default function PaginaInicial() {
             }}
           >
             <Titulo tag="h2">Boas vindas de volta!</Titulo>
-            <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
+            <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[400] }}>
               {appConfig.name}
             </Text>
 
@@ -138,9 +138,9 @@ export default function PaginaInicial() {
               alignItems: 'center',
               maxWidth: '200px',
               padding: '16px',
-              backgroundColor: appConfig.theme.colors.neutrals[600],
+              backgroundColor: appConfig.theme.colors.neutrals[500],
               border: '1px solid',
-              borderColor: appConfig.theme.colors.neutrals[300],
+              borderColor: appConfig.theme.colors.neutrals[999],
               borderRadius: '10px',
               flex: 1,
               minHeight: '240px',
