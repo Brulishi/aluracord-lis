@@ -61,7 +61,7 @@ export default function PaginaInicial() {
               xs: 'column',
               sm: 'row',
             },
-            width: '50%', maxWidth: '600px',
+            width: '100%', maxWidth: '600px',
             borderRadius: '5px', padding: '32px', margin: '16px',
             boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
             backgroundColor: appConfig.theme.colors.neutrals[500],
@@ -130,7 +130,10 @@ export default function PaginaInicial() {
                 mainColorStrong: appConfig.theme.colors.primary[400],
               }}
             />
+            <Text styleSheet={{ padding: '10px'}} >Ao clicar em Entrar, você concorda com os nossos termos de Serviço.</Text>
+
           </Box>
+          
           {/* Formulário */}
 
 

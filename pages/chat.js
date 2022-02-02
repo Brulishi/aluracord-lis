@@ -35,10 +35,9 @@ export default function ChatPage() {
         <Box
             styleSheet={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                backgroundColor: appConfig.theme.colors.primary[500],
                 backgroundImage: `url(https://d2ofqe7l47306o.cloudfront.net/games/1920x1080/life-is-strange-11.jpg)`,
                 backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
-                color: appConfig.theme.colors.neutrals['000']
+                color: appConfig.theme.colors.neutrals[999]
             }}
         >
             <Box
@@ -50,7 +49,7 @@ export default function ChatPage() {
                     borderRadius: '5px',
                     backgroundColor: appConfig.theme.colors.neutrals[500],
                     height: '100%',
-                    maxWidth: '95%',
+                    maxWidth: '50%',
                     maxHeight: '95vh',
                     padding: '32px',
                 }}
@@ -104,8 +103,9 @@ export default function ChatPage() {
                                 borderRadius: '5px',
                                 padding: '6px 8px',
                                 backgroundColor: appConfig.theme.colors.neutrals[999],
+                                
                                 marginRight: '12px',
-                                color: appConfig.theme.colors.neutrals[200],
+                                color: appConfig.theme.colors.neutrals[900],
                             }}
                         />
                     </Box>
@@ -118,13 +118,15 @@ export default function ChatPage() {
 function Header() {
     return (
         <>
-            <Box styleSheet={{ width: '100%', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} >
+            <Box styleSheet={{ width: '100%', marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+         }} >
                 <Text variant='heading5'>
                     Chat
                 </Text>
-                <Button
+                <Button styleSheet={{color: appConfig.theme.colors.neutrals[999]
+}}
                     variant='tertiary'
-                    colorVariant='neutral'
+                    colorVariant='dark'
                     label='Logout'
                     href="/"
                 />
@@ -139,12 +141,15 @@ function MessageList(props) {
         <Box
             tag="ul"
             styleSheet={{
-                overflow: 'scroll',
+                overflow: 'auto',
                 display: 'flex',
                 flexDirection: 'column-reverse',
                 flex: 1,
-                color: appConfig.theme.colors.neutrals["600"],
+                color: appConfig.theme.colors.neutrals[900],
                 marginBottom: '16px',
+                backgroundImage: `url(https://wallpaperaccess.com/full/7331539.jpg)`,
+                backgroundRepeat: 'no-repeat', backgroundSize: '', backgroundBlendMode: 'multiply'
+
             }}
         >
             {props.mensagens.map((mensagem) => {
@@ -157,7 +162,7 @@ function MessageList(props) {
                             padding: '6px',
                             marginBottom: '12px',
                             hover: {
-                                backgroundColor: appConfig.theme.colors.neutrals[900],
+                                backgroundColor: appConfig.theme.colors.neutrals[500],
                             }
                         }}
                     >
@@ -183,7 +188,7 @@ function MessageList(props) {
                                 styleSheet={{
                                     fontSize: '10px',
                                     marginLeft: '8px',
-                                    color: appConfig.theme.colors.neutrals[600],
+                                    color: appConfig.theme.colors.neutrals[900],
                                 }}
                                 tag="span"
                             >
