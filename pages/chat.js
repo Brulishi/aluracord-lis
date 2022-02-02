@@ -2,6 +2,10 @@ import { Box, Text, TextField, Image, Button } from '@skynexui/components';
 import React from 'react';
 import appConfig from '../config.json';
 
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MzgyNzE4NCwiZXhwIjoxOTU5NDAzMTg0fQ.SxIRkbbVsneLqo0F3SsANXY8c6iO7ixgLbYGkRX0Dtc'
+    const SUPABASE_URL = 'https://jlueklrebtjvidtwhkkm.supabase.co'
+
+
 export default function ChatPage() {
     const [mensagem, setMensagem] = React.useState('');
     const [listaDeMensagens, setListaDeMensagens] = React.useState([]);
@@ -82,7 +86,8 @@ export default function ChatPage() {
                             alignItems: 'center',
                         }}
                     >
-                        <TextField
+                        <TextField 
+                        
                             value={mensagem}
                             onChange={(event) => {
                                 const valor = event.target.value;
@@ -93,7 +98,7 @@ export default function ChatPage() {
                                     event.preventDefault();
                                     handleNovaMensagem(mensagem);
                                 }
-                            }}
+                            }}                            
                             placeholder="Insira sua mensagem aqui..."
                             type="textarea"
                             styleSheet={{
@@ -107,7 +112,11 @@ export default function ChatPage() {
                                 marginRight: '12px',
                                 color: appConfig.theme.colors.neutrals[900],
                             }}
+                            
+                            
                         />
+                        
+                        
                     </Box>
                 </Box>
             </Box>
